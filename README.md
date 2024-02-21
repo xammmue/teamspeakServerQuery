@@ -1,3 +1,14 @@
+# About
+
+This script fetch the current user count of your Teamspeak 3 server and publishes it to a mqtt topic.
+The published count can then for example be used in Home Assistant
+
+# Installation
+- Clone the script
+- add the configuration file as defined below
+- run `pip install -r requirements.txt`
+- run `python3 main.py` to start
+
 # Configuration file
 you need to create a config.ini structured like this:
 ```
