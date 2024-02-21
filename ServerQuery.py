@@ -72,8 +72,6 @@ class ServerQuery:
     def load_client_list(self) -> list[Client]:
         results = self.run_async_query('clientlist')
         raw_client_list = results['clientlist'][0:-1]
-        # clid=24 cid=5 client_database_id=1825 client_nickname=Incredible_Max1 client_type=1
-        # clid=23 cid=5 client_database_id=1825 client_nickname=Incredible_Max client_type=0
 
         client_list = []
 
