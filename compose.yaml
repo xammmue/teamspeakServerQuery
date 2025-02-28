@@ -1,0 +1,7 @@
+services:
+  python:
+    restart: unless-stopped
+    build:
+      context: ./
+      dockerfile: ./docker/Dockerfile
+    network_mode: bridge
